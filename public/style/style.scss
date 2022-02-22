@@ -1,0 +1,60 @@
+$primary: #845ec2;
+$secondary: #d3ecf7;
+$mixed: #1d87a4;
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: margin 1s;
+}
+body{
+    margin-top: calc(100vh/6);
+}
+#root{
+    box-shadow: 0px 0px 50px 0px rgb(207, 202, 235);
+    width: fit-content;
+    margin: auto;
+}
+
+.header, .main{
+    background: $primary;
+    color: white;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    min-width: 400px;
+    font-size: large;
+}
+.main{
+    background: whitesmoke;
+    height: fit-content;
+    padding: 40px;
+}
+.form{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#uname, #passkey, #submit{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: solid 2px rgb(228, 224, 224);
+    outline: none;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 300px;
+}
+#submit{
+    background: $primary;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: $primary;
+}
